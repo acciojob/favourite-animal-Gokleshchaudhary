@@ -3,10 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Favourite Animal</title>
+    <title>Favorite Animal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+
+        .image-container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        p {
+            margin-top: 1.5rem;
+            color: #666;
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body>
-    <h1>My Favourite Animal</h1>
-    <img src="https://example.com/your-favorite-animal.jpg" alt="A beautiful image of my favorite animal" />
+    <div class="container">
+        <h1>My Favorite Animal: Panda</h1>
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7" 
+                 alt="A cute giant panda bear sitting and eating bamboo in its natural habitat"
+                 loading="lazy">
+        </div>
+        <p>The Giant Panda is a beloved symbol of conservation and one of the most adorable creatures on Earth.</p>
+    </div>
 </body>
 </html>
